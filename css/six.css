@@ -1,0 +1,334 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* container */
+body{
+    background-color: #F0F0F0;
+}
+.container{
+    width: 1024px;
+    margin: 0 auto;
+}
+.header{
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #424242;
+}
+.header_input label{
+    display: block;
+    font-family: AppleSystemUIFont;
+    font-size: 18px;
+    color: #FFD366;
+    margin-bottom: 7px;
+}
+.header_input input{
+    background: rgba(255,255,255,0.18);
+    border: 2px solid #FFD366;
+    border-radius: 10px;
+    font-family: SFNSDisplay;
+    font-size: 24px;
+    color: rgba(255,255,255,0.50);
+    margin-bottom: 23px;
+}
+.button{
+    display: flex;
+    align-items: center;
+}
+.button input{
+    background: #FFD366;
+    width: 120px;
+    height: 120px;
+    font-family: PingFangTC-Regular;
+    font-size: 24px;
+    color: #424242;
+    border-radius:  50% 50%;
+    border: 0px solid transparent;
+}
+.button input:hover{
+    background: #FFD366;
+    box-shadow: 0 1px 6px 3px rgba(255,196,50,0.64);
+    cursor: pointer;
+}
+.button input:active{
+    background: #DEA821;
+}
+/* 更改後btn */
+.box_green p,.box_green h2,.box_blue p,.box_blue h2,.box_orange p,.box_orange h2,.box_orange_two p,.box_orange_two h2,.box_orange_three p,.box_orange_three h2,.box_red p,.box_red h2{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.box_green h2,.box_blue h2,.box_orange h2,.box_orange_two h2,.box_orange_three h2,.box_red h2{
+    font-size: 32px;
+}
+/* 過輕 */
+.box_blue{
+    width: 123px;
+    height: 123px; 
+    border-radius: 50% 50%;
+    border: 6px solid #31BAF9;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #31BAF9;
+}
+.box_img_blue{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #31BAF9;
+    border-radius: 50% 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    cursor: pointer;
+}
+.text_blue{
+    font-family: SFNSDisplay;
+    font-size: 32px;
+    color: #31BAF9;
+    margin-left: 18px;
+}
+/* 理想 */
+.box_green{
+    width: 123px;
+    height: 123px; 
+    border-radius: 50% 50%;
+    border: 6px solid #86D73F;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #86D73F;
+}
+.box_img_green{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #86D73F;
+    border-radius: 50% 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    cursor: pointer;
+}
+.text_green{
+    font-family: SFNSDisplay;
+    font-size: 32px;
+    color: #86D73F;
+    margin-left: 18px;
+}
+/* 過重 */
+.box_orange{
+    width: 123px;
+    height: 123px; 
+    border-radius: 50% 50%;
+    border: 6px solid #FF982D;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FF982D;
+}
+.box_img_orange{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #FF982D;
+    border-radius: 50% 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    cursor: pointer;
+}
+.text_orange{
+    font-family: SFNSDisplay;
+    font-size: 32px;
+    color: #FF982D;
+    margin-left: 18px;
+}
+/* 輕度肥胖 */
+.box_orange_two{
+    width: 123px;
+    height: 123px; 
+    border-radius: 50% 50%;
+    border: 6px solid #FF6C03;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FF6C03;
+}
+.box_img_orange_two{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #FF6C03;
+    border-radius: 50% 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    cursor: pointer;
+}
+.text_orange_two{
+    font-family: SFNSDisplay;
+    font-size: 32px;
+    color: #FF6C03;
+    margin-left: 18px;
+}
+/* 重度肥胖 */
+.box_red{
+    width: 123px;
+    height: 123px; 
+    border-radius: 50% 50%;
+    border: 6px solid #FF1200;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FF1200;
+}
+.box_img_red{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #FF1200;
+    border-radius: 50% 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    cursor: pointer;
+}
+.text_red{
+    font-family: SFNSDisplay;
+    font-size: 32px;
+    color: #FF1200;
+    margin-left: 18px;
+}
+/* content */
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} 
+.content h2{
+    margin-top: 48px;    
+    font-family: SFNSDisplay;
+    font-size: 24px;
+    color: #424242;
+    margin-bottom: 36px;    
+}
+.content a{   
+    font-size: 12;
+    color: red;
+    font-weight: 700;
+    text-decoration: none;
+}
+.content h3:hover{
+    cursor: pointer;
+}
+.record li{
+    width: 624px;
+    height: 62px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    align-items: center;
+    margin-bottom: 16px;
+   
+}
+/* 顏色 */
+.record_green{
+    border-left:7px solid #86D73F;
+}
+.record_blue{
+    border-left:7px solid #31BAF9;
+}
+.record_orange{
+    border-left:7px solid #FF982D;
+}
+.record_orange_two{
+    border-left:7px solid #FF6C03;
+}
+.record_orange_three{
+    border-left:7px solid #FF6C03;
+}
+.record_red{
+    border-left:7px solid #FF1200;
+}
+/* footer */
+.footer{
+    background-color: #FFD366;
+    display: flex;
+    align-items: center;
+    height: 90px;
+    justify-content: center;
+}
+.footer img{
+    width: 55px;
+    height: 55px;
+}
